@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="buet.rafi.dictionary"
+    android:versionCode="5"
+    android:versionName="2.3" >
+
+    <uses-sdk android:minSdkVersion="8"
+        android:targetSdkVersion="11" />
+
+    <application
+        android:theme="@style/LightThemeSelector"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="esselami.opencoding.personaldictionary.Dictionary"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="esselami.opencoding.personaldictionary.BookMarkedWords" android:label="Favourites"></activity>
+        <activity android:name="esselami.opencoding.personaldictionary.About" android:label="About"></activity>
+
+    </application>
+
+</manifest>
